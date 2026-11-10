@@ -20,8 +20,10 @@
       /* Brauzerning o'z fokus ramkasi kerak emas: maydon konteynerining o'z fokus chegarasi bor. */
       input, textarea, select, [contenteditable] { outline: none !important; box-shadow: none; -webkit-tap-highlight-color: transparent; }
       input:focus, textarea:focus { outline: none !important; }
+      /* Tugmalar (Pressable → [role=button], [tabindex]) bosilganda brauzer chegarasi chiqmasin. */
+      button:focus, [role]:focus, [tabindex]:focus, *:focus-visible { outline: none !important; }
     </style>
-    <script type="module" crossorigin src="./assets/index-CCLjZRIH.js"></script>
+    <script type="module" crossorigin src="./assets/index-D7choMnL.js"></script>
   </head>
   <body>
     <div id="root"></div>
